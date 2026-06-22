@@ -1,6 +1,6 @@
 # pe-info
 
-Inspect PE/COFF binaries (Windows `.exe`/`.dll`). Cross-platform — runs on any host.
+Inspect PE/COFF binaries (Windows `.exe`/`.dll`). Cross-platform.
 
 ## Install
 
@@ -17,7 +17,7 @@ pe-info imports  some.dll
 pe-info exports  some.dll
 ```
 
-Pass `--json` to any subcommand for machine-readable output:
+Add `--json` to any subcommand for machine-readable output:
 
 ```
 pe-info imports some.dll --json | jq '.[] | .dll'
@@ -25,4 +25,4 @@ pe-info imports some.dll --json | jq '.[] | .dll'
 
 ## License
 
-MIT.
+MIT
